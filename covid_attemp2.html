@@ -105,11 +105,11 @@
 		//var url = 'https://github.com/cghr-toronto/covid.cghr.dev/raw/magbranch/public_html/forecasting/data/cvapp_border.geojson';
 		map.on('load', function(){
 			  map.addSource('covid19', {
-			    //'type': 'geojson',
-			    //'data': 'https://github.com/maggie-98/COVID/raw/master/cvapp_border.geojson'
+			    'type': 'geojson',
+			    'data': 'https://github.com/maggie-98/COVID/raw/master/cvapp_border.geojson'
 					//'data': './temp.geojson'
-					'type': 'vector',
-					'url': 'mapbox://mma98.401oms0h'
+					// 'type': 'vector',
+					// 'url': 'mapbox://mma98.401oms0h'
 			  });
 				map.addLayer({
 			      'id': 'covid19-data',
@@ -134,7 +134,7 @@
 						// 	'fill-color': '#f08',
 						// 	'fill-opacity': 0.4
 						// },
-						'source-layer': 'cvapp_border-8ve9qa',
+						//'source-layer': 'cvapp_border-8ve9qa',
 						'filter': ['==','date', '2020-02-13']
 
 			    });
